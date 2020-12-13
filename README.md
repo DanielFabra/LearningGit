@@ -34,12 +34,20 @@ git version 2.25.1
 
 _ _ _
 
-## Flujo de trabajo básico de Git ⚙️
-_A continuación se le presenta el flujo de trabajo besico de git por medio de una serie de comandos iniciales._
+## 1️⃣ Flujo de trabajo básico de Git ⚙️
+_A continuación se le presenta el flujo de trabajo basico de git por medio de una serie de comandos iniciales._
 
-- `git init` crea un nuevo repositorio de Git.
-- `git status` inspecciona el contenido del directorio de trabajo y el área de preparación.
-- `git add` agrega archivos del directorio de trabajo al área de preparación.
-- `git diff` muestra la diferencia entre el directorio de trabajo y el área de preparación.
-- `git commit` almacena permanentemente los cambios de archivos del área de preparación en el repositorio.
-- `git log` muestra una lista de todas las confirmaciones anteriores.
+- `git init` Crea un nuevo repositorio de Git.
+- `git status` Inspecciona el contenido del directorio de trabajo y el área de preparación.
+- `git add` Agrega archivos del directorio de trabajo al área de preparación.
+- `git diff` Muestra la diferencia entre el directorio de trabajo y el área de preparación.
+- `git commit` Almacena permanentemente los cambios de archivos del área de preparación en el repositorio.
+- `git log` Muestra una lista de todos los commits anteriores.
+
+
+## 2️⃣ Formas de retroceder en Git ⚙️
+_Puede utilizar estas habilidades para deshacer los cambios realizados en su proyecto Git._
+
+- `git checkout HEAD filename` Descarta los cambios en el directorio de trabajo.
+- `git reset HEAD filename` Anula los cambios de archivo en el área de preparación.
+- `git reset commit_SHA` Se restablece a una confirmación anterior en su historial de confirmaciones.
