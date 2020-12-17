@@ -34,6 +34,10 @@ git version 2.25.1
 
 _ _ _
 
+
+![Git Workflow](imgs/git-workflow.png?raw=true "Git Workflow")
+
+
 ## 1️⃣ Flujo de trabajo básico de Git ⚙️
 _A continuación se le presenta el flujo de trabajo basico de git por medio de una serie de comandos iniciales._
 
