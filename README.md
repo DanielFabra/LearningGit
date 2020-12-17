@@ -49,6 +49,9 @@ _A continuación se le presenta el flujo de trabajo basico de git por medio de u
 - `git log` Muestra una lista de todos los commits anteriores.
 
 
+![Git Reset](imgs/git-reset.png?raw=true "Git Reset")
+
+
 ## 2️⃣ Formas de retroceder en Git ⚙️
 _Puede utilizar estas habilidades para deshacer los cambios realizados en su proyecto Git._
 
