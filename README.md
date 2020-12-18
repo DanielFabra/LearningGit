@@ -43,9 +43,9 @@ _A continuación se le presenta el flujo de trabajo basico de git por medio de u
 
 - `git init` Crea un nuevo repositorio de Git.
 - `git status` Inspecciona el contenido del directorio de trabajo y el área de preparación.
-- `git add` Agrega archivos del directorio de trabajo al área de preparación.
-- `git diff` Muestra la diferencia entre el directorio de trabajo y el área de preparación.
-- `git commit` Almacena permanentemente los cambios de archivos del área de preparación en el repositorio.
+- `git add <filename>` Agrega archivos del directorio de trabajo al área de preparación.
+- `git diff <filename>` Muestra la diferencia entre el directorio de trabajo y el área de preparación.
+- `git commit -m "<annotation>"` Almacena permanentemente los cambios de archivos del área de preparación en el repositorio.
 - `git log` Muestra una lista de todos los commits anteriores.
 
 
@@ -53,8 +53,13 @@ _A continuación se le presenta el flujo de trabajo basico de git por medio de u
 
 
 ## 2️⃣ Formas de retroceder en Git ⚙️
-_Puede utilizar estas habilidades para deshacer los cambios realizados en su proyecto Git._
+_Puede utilizar estos comandos para deshacer los cambios realizados en su proyecto Git._
 
-- `git checkout HEAD filename` Descarta los cambios en el directorio de trabajo.
-- `git reset HEAD filename` Anula los cambios de archivo en el área de preparación.
-- `git reset commit_SHA` Se restablece a una confirmación anterior en su historial de confirmaciones.
+> En muchos casos, el `commit` más reciente se conoce como `HEAD`.
+
+> Este comando funciona utilizando los primeros 7 caracteres del SHA de una confirmación anterior.
+
+- `git show HEAD` Muestra el ultimo registro de `git log` (ultimo `commit`), además de todos los cambios realizados en el `HEAD`.
+- `git checkout HEAD <filename>` Restaurará el `filename` en su _directorio de trabajo_ para que se vea exactamente como lo hizo la última vez que realizó un `commit`.
+- `git reset HEAD <filename>` Restablece el `filename` en el _área de preparación_ para que sea el mismo del `HEAD`. No descarta los cambios de `filename` del _directorio de trabajo_, simplemente los elimina del _área de preparación_.
+- `git reset commit_SHA` Los archivos del _directorio de trabajo_ se restablecen a un `commit anterior del historial.
