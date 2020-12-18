@@ -57,9 +57,9 @@ _Puede utilizar estos comandos para deshacer los cambios realizados en su proyec
 
 > En muchos casos, el `commit` más reciente se conoce como `HEAD`.
 
-> Este comando funciona utilizando los primeros 7 caracteres del SHA de una confirmación anterior.
+> SHA son los caracteres que identifican un commit del historial, con _git reset_ funciona utilizando los primeros 7 caracteres.
 
-- `git show HEAD` Muestra el ultimo registro de `git log` (ultimo `commit`), además de todos los cambios realizados en el `HEAD`.
-- `git checkout HEAD <filename>` Restaurará el `filename` en su _directorio de trabajo_ para que se vea exactamente como lo hizo la última vez que realizó un `commit`.
-- `git reset HEAD <filename>` Restablece el `filename` en el _área de preparación_ para que sea el mismo del `HEAD`. No descarta los cambios de `filename` del _directorio de trabajo_, simplemente los elimina del _área de preparación_.
-- `git reset commit_SHA` Los archivos del _directorio de trabajo_ se restablecen a un `commit anterior del historial.
+- `git show HEAD` Muestra el ultimo registro de _git log_ (ultimo _commit_), además de todos los cambios realizados en el _HEAD_.
+- `git checkout HEAD <filename>` Restaurará el _filename_ en su _directorio de trabajo_ para que se vea exactamente como lo hizo la última vez que realizó un _commit_.
+- `git reset HEAD <filename>` Restablece el _filename_ en el _área de preparación_ para que sea el mismo del _HEAD_. No descarta los cambios de _filename_ del _directorio de trabajo_, simplemente los elimina del _área de preparación_.
+- `git reset commit_SHA` Los archivos del _directorio de trabajo_ se restablecen a un _commit_ anterior del historial.
