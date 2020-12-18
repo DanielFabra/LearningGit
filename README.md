@@ -85,5 +85,11 @@ _ _ _
 
 
 ## ❹ Trabajo en equipo con Git ⚙️
+_Una introducción a las colaboraciones Git remotas_
 
+- `git clone remote_location clone_name` Es usado para clonar un repositorio.
+- `git remote -v` Con el comando puede ver una lista de versiones remotas de un proyecto Git.
+- `git fetch` Es una manera fácil de ver si se han realizado cambios en el repositorio remoti y llevar los cambios a su copia local.
+- `git push origin your_branch_name` Empujará a su sucursal hasta el mando a distancia, origin. 
+- `git merge origin/master` Se fusiona origin/master con su sucursal local.
 _ _ _
